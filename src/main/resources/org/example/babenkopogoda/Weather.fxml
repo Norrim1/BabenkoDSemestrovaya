@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.babenkopogoda.WeatherController">
+   <children>
+      <Button fx:id="searchButton" layoutX="292.0" layoutY="30.0" minWidth="53.0" mnemonicParsing="false" onAction="#submit" prefHeight="34.0" prefWidth="67.0" text="Search" />
+      <TextField fx:id="searchField" layoutX="87.0" layoutY="30.0" prefHeight="34.0" prefWidth="205.0" promptText="Enter city name">
+         <contextMenu>
+            <ContextMenu fx:id="entriesPopup">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu></TextField>
+      <Label fx:id="MaxTempLabel" alignment="CENTER" layoutX="117.0" layoutY="141.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1" alignment="CENTER" layoutX="41.0" layoutY="141.0" prefHeight="34.0" prefWidth="67.0" text="MaxTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel11" alignment="CENTER" layoutX="41.0" layoutY="183.0" prefHeight="34.0" prefWidth="67.0" text="MinTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel12" alignment="CENTER" layoutX="225.0" layoutY="141.0" prefHeight="34.0" prefWidth="67.0" text="Temp" textAlignment="CENTER" />
+      <Label fx:id="MinTempLabel" alignment="CENTER" layoutX="117.0" layoutY="183.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="MedianTempLabel" alignment="CENTER" layoutX="312.0" layoutY="141.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="firstLabel121" alignment="CENTER" layoutX="225.0" layoutY="183.0" prefHeight="34.0" prefWidth="67.0" text="Feel Temp" textAlignment="CENTER" />
+      <Label fx:id="FeelTempLabel" alignment="CENTER" layoutX="312.0" layoutY="183.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="firstLabel111" alignment="CENTER" layoutX="32.0" layoutY="224.0" prefHeight="34.0" prefWidth="76.0" text="Wind Speed" textAlignment="CENTER" />
+      <Label fx:id="firstLabel112" alignment="CENTER" layoutX="14.0" layoutY="258.0" prefHeight="34.0" prefWidth="94.0" text="Wind Direction" textAlignment="CENTER" />
+      <Label fx:id="WindSpeedLabel" alignment="CENTER" layoutX="117.0" layoutY="224.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="WindDirectionLabel" alignment="CENTER" layoutX="117.0" layoutY="258.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1211" alignment="CENTER" layoutX="225.0" layoutY="224.0" prefHeight="34.0" prefWidth="67.0" text="Humidity" textAlignment="CENTER" />
+      <Label fx:id="HumidityLabel" alignment="CENTER" layoutX="312.0" layoutY="230.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="firstLabel12111" alignment="CENTER" layoutX="225.0" layoutY="258.0" prefHeight="34.0" prefWidth="67.0" text="Pressure" textAlignment="CENTER" />
+      <Label fx:id="PressureLabel" alignment="CENTER" layoutX="301.0" layoutY="258.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="firstLabel121111" alignment="CENTER" layoutX="32.0" layoutY="292.0" prefHeight="34.0" prefWidth="76.0" text="Status" textAlignment="CENTER" />
+      <Label fx:id="CloudinessLabel" alignment="CENTER" layoutX="117.0" layoutY="292.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1211111" alignment="CENTER" layoutX="225.0" layoutY="292.0" prefHeight="34.0" prefWidth="76.0" text="Precipitation" textAlignment="CENTER" />
+      <Label fx:id="PrecipitationLabel" alignment="CENTER" layoutX="312.0" layoutY="292.0" lineSpacing="10.0" prefHeight="34.0" prefWidth="94.0" textAlignment="CENTER" />
+      <ImageView fx:id="Icon" fitHeight="69.0" fitWidth="76.0" layoutX="8.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="0.55" contrast="0.42" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Icon1" fitHeight="60.0" fitWidth="94.0" layoutX="379.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="0.55" contrast="0.42" />
+         </effect>
+      </ImageView>
+      <Label fx:id="firstLabel13" alignment="CENTER" layoutX="473.0" layoutY="23.0" prefHeight="21.0" prefWidth="67.0" text="MaxTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel113" alignment="CENTER" layoutX="473.0" layoutY="44.0" prefHeight="21.0" prefWidth="67.0" text="MinTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1211112" alignment="CENTER" layoutX="469.0" layoutY="85.0" prefHeight="21.0" prefWidth="76.0" text="Status" textAlignment="CENTER" />
+      <Label fx:id="firstLabel122" alignment="CENTER" layoutX="473.0" layoutY="64.0" prefHeight="21.0" prefWidth="67.0" text="Temp" textAlignment="CENTER" />
+      <Label fx:id="Date1" alignment="CENTER" layoutX="379.0" layoutY="85.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Max1" alignment="CENTER" layoutX="545.0" layoutY="23.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Min1" alignment="CENTER" layoutX="545.0" layoutY="47.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Mid1" alignment="CENTER" layoutX="545.0" layoutY="71.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Status1" alignment="CENTER" layoutX="545.0" layoutY="85.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <ImageView fx:id="Icon2" fitHeight="60.0" fitWidth="94.0" layoutX="379.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="0.55" contrast="0.42" />
+         </effect>
+      </ImageView>
+      <Label fx:id="firstLabel131" alignment="CENTER" layoutX="474.0" layoutY="117.0" prefHeight="21.0" prefWidth="67.0" text="MaxTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1131" alignment="CENTER" layoutX="474.0" layoutY="138.0" prefHeight="21.0" prefWidth="67.0" text="MinTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel12111121" alignment="CENTER" layoutX="470.0" layoutY="179.0" prefHeight="21.0" prefWidth="76.0" text="Status" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1221" alignment="CENTER" layoutX="474.0" layoutY="158.0" prefHeight="21.0" prefWidth="67.0" text="Temp" textAlignment="CENTER" />
+      <Label fx:id="Max2" alignment="CENTER" layoutX="546.0" layoutY="117.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Min2" alignment="CENTER" layoutX="546.0" layoutY="141.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Mid2" alignment="CENTER" layoutX="546.0" layoutY="165.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Status2" alignment="CENTER" layoutX="546.0" layoutY="179.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <ImageView fx:id="Icon3" fitHeight="60.0" fitWidth="94.0" layoutX="372.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="0.55" contrast="0.42" />
+         </effect>
+      </ImageView>
+      <Label fx:id="firstLabel132" alignment="CENTER" layoutX="472.0" layoutY="217.0" prefHeight="21.0" prefWidth="67.0" text="MaxTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1132" alignment="CENTER" layoutX="472.0" layoutY="238.0" prefHeight="21.0" prefWidth="67.0" text="MinTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel12111122" alignment="CENTER" layoutX="468.0" layoutY="279.0" prefHeight="21.0" prefWidth="76.0" text="Status" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1222" alignment="CENTER" layoutX="472.0" layoutY="258.0" prefHeight="21.0" prefWidth="67.0" text="Temp" textAlignment="CENTER" />
+      <Label fx:id="Max3" alignment="CENTER" layoutX="544.0" layoutY="217.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Min3" alignment="CENTER" layoutX="544.0" layoutY="241.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Mid3" alignment="CENTER" layoutX="544.0" layoutY="265.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Status3" alignment="CENTER" layoutX="544.0" layoutY="279.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <ImageView fx:id="Icon4" fitHeight="60.0" fitWidth="94.0" layoutX="379.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="0.55" contrast="0.42" />
+         </effect>
+      </ImageView>
+      <Label fx:id="firstLabel133" alignment="CENTER" layoutX="471.0" layoutY="309.0" prefHeight="21.0" prefWidth="67.0" text="MaxTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1133" alignment="CENTER" layoutX="471.0" layoutY="330.0" prefHeight="21.0" prefWidth="67.0" text="MinTemp" textAlignment="CENTER" />
+      <Label fx:id="firstLabel12111123" alignment="CENTER" layoutX="467.0" layoutY="371.0" prefHeight="21.0" prefWidth="76.0" text="Status" textAlignment="CENTER" />
+      <Label fx:id="firstLabel1223" alignment="CENTER" layoutX="471.0" layoutY="350.0" prefHeight="21.0" prefWidth="67.0" text="Temp" textAlignment="CENTER" />
+      <Label fx:id="Max4" alignment="CENTER" layoutX="543.0" layoutY="309.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Min4" alignment="CENTER" layoutX="543.0" layoutY="333.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Mid4" alignment="CENTER" layoutX="543.0" layoutY="350.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Status4" alignment="CENTER" layoutX="543.0" layoutY="371.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Date2" alignment="CENTER" layoutX="377.0" layoutY="179.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Date3" alignment="CENTER" layoutX="365.0" layoutY="279.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="Date4" alignment="CENTER" layoutX="377.0" layoutY="371.0" lineSpacing="10.0" prefHeight="21.0" prefWidth="94.0" textAlignment="CENTER" />
+      <Label fx:id="cityName" alignment="CENTER" layoutX="123.0" layoutY="84.0" lineSpacing="10.0" prefHeight="40.0" prefWidth="180.0" textAlignment="CENTER" />
+   </children>
+   <effect>
+      <ColorAdjust brightness="-0.21" />
+   </effect>
+</Pane>
